@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest-countries.css">
+    <title>Restcountries Search</title>
+</head>
+
+<body>
+    <div class="Maincontainer">
+        <nav id="navSection">
+            <p class="where">Where in the world?</p>
+            <div id="ChangeModes">
+                <button id="LightMode">
+                    <img src="dark_mode-removebg-preview.png" alt="LightMode" class="ModeImages"> LightMode
+                </button>
+                <button id="DarkMode"><img src="ligt_mode-removebg-preview.png" alt="DarkMode" class="ModeImages">
+                    DarkMode
+                </button>
+        </nav>
+    </div>
+    <div id="Section1">
+        <div id="searchbar">
+            <button id="searchbtn" type="submit">
+                <img src="search_button-removebg-preview.png" alt="submitCountryName" id="searchbtn"
+                    filter="hue(100%)"></button>
+            <input type="text" id="typcountryName" placeholder="Search a country...">
+        </div>
+        <div><select name="filtercountries" id="filterbar">
+                <option value="All" id="noneOption">Filter By Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </div>
+    <div id="Section2">
+        <div class="container">
+        </div>
+    </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="rest-countries.js"></script>
+    <script src="changemode.js"></script>
+    </bod>
+
+</html>
