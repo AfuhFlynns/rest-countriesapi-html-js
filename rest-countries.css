@@ -7,18 +7,12 @@
 /*Desktop Design*/
 @media screen and (max-width: 1440px) {
     body {
-        width: 100%;
         color: hsl(200, 15%, 8%);
         background-color: hsl(225, 6%, 88%);
         font-size: 14px;
         font-family: poppins;
         font-weight: 300, 600, 800;
     }
-
-    #GeneralContainer {
-        width: 100vw;
-    }
-
     #navSection {
         height: 65px;
         width: 100vw;
@@ -30,21 +24,20 @@
         font-weight: bold;
         position: sticky;
         top: 0;
+        gap: 59rem;
     }
 
     .where {
         color: black;
         font-size: 18px;
-        position: fixed;
         left: 0;
-        margin: 0 0 0 3.6rem;
+        margin: 0 0 0 2rem;
     }
 
     #ChangeModes {
         color: black;
-        position: fixed;
         right: 0;
-        margin: 0 4.4rem 0 0;
+        margin: 0 3.6rem 0 0;
     }
 
     #DarkMode {
@@ -139,8 +132,9 @@
     }
 
     ::placeholder {
-        color: rgb(187, 186, 186);
+        color: rgb(163, 163, 163);
         font-size: 14px;
+        opacity: 0.99;
     }
 
     ::selection {
@@ -152,11 +146,11 @@
 
     #filterbar {
         height: 47px;
-        width: 4.6cm;
+        width: 4.9cm;
         border-radius: 6px;
         background-color: hsl(0, 0%, 98%);
         color: rgb(59, 59, 59);
-        padding: 1rem;
+        padding: 0 1rem 0 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         font-weight: 40;
@@ -185,21 +179,17 @@
         background-color: hsl(0, 0%, 98%);
         color: #424242;
     }
-
-    #filterbar #noneOption {
-        position: absolute;
-        margin: 0 0 7rem 0;
-    }
-
     .container {
         color: black;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100vw;
         gap: 4rem;
-        display: flexbox;
+        width: 100vw;
+    }
+    .Maincontainer{
+        width:70vw;
     }
 
     .countryInfo {
@@ -226,8 +216,9 @@
 
     .mainDetails {
         padding: 0.3rem 0 0 1.4rem;
-        font-weight: 549;
-        font-size: 13px;
+        font-weight: lighter;
+        font-size: 13.1px;
+        opacity:0.9;
     }
 
     .countryName {
@@ -242,7 +233,7 @@
     }
 
     #Section2 {
-        width: 100vw;
+        width: 79vw;
     }
 }
 
