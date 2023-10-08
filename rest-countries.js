@@ -97,15 +97,21 @@ $(document).ready(function () {
           Borders.innerHTML = "";
           let borderss = [];
           borderss = country.borders;
+          const countryKeys = Object.keys(country)
 
-            setTimeout(() => {
+          setTimeout(() => {
+            if (countryKeys.includes("borders") == true) { 
               for (let i = 0; i < borderss.length; i++) {
-                  const responseBorder = document.createElement("li");
-                responseBorder.textContent = borderss[i];
-                responseBorder.classList.add("borders");
-                const responseContainer = document.createElement("div");
-                responseContainer.appendChild(responseBorder);
-                Borders.appendChild(responseContainer);
+                const responseBorder = document.createElement("li");
+              responseBorder.textContent = borderss[i];
+              responseBorder.classList.add("borders");
+              const responseContainer = document.createElement("div");
+              responseContainer.appendChild(responseBorder);
+              Borders.appendChild(responseContainer);
+            }
+              }
+              if (countryKeys.includes("borders")==false) { 
+                Borders.textContent = "No Borders...";
               }
             }, -50);
         }
@@ -152,17 +158,12 @@ countryInfo.appendChild(countryCapital);
     const searchInput = document.querySelector("#typcountryName");
     searchInput.addEventListener("input", function (event) {
           const searchTerm = event.target.value.toLowerCase();
-      data.filter((country) => {
-        if (country.name.common.toLowerCase() != event.target.value.toLowerCase()) {
-          Section2.innerHTML = `<h1>No country matches Search term...</h1>`
-        } else {
-          const filteredCountries = data.filter((country) => 
+
+      const filteredCountries = data.filter((country) =>
         country.name.common.toLowerCase().includes(searchTerm)
       );
       gottenDetails(filteredCountries);
       
-        }
-      })
     });
   }
   setTimeout(() => {

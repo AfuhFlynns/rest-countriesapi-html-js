@@ -218,7 +218,7 @@
         padding: 0.3rem 0 0 1.4rem;
         font-weight: lighter;
         font-size: 13.1px;
-        opacity:0.9;
+        opacity:0.6;
     }
 
     .countryName {
@@ -238,4 +238,57 @@
 }
 
 /*Mobile Design*/
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    #navSection {
+        gap: 3.6rem;
+        height: 68px;
+    }
+    .where{
+        font-size:16px;
+        margin: 0 0 0 1rem;
+    }
+    #ChangeModes {
+        margin: 0 2rem 0 0;
+    }
+    #searchbar {
+        gap: 6px;
+    }
+    #typcountryName {
+        width: 7cm;
+    }
+    #filterbar {
+        left: -3.9rem;
+    }
+    #Section1 {
+        flex-direction: column;
+        align-items: left;
+        gap: 2.7rem;
+        padding: 8rem 0 6rem 0;
+    }
+    .countryInfo {
+        width: 8.2cm;
+        height: 9cm;
+    }
+    .countryFlag {
+        width: 8.2cm;
+        height: 4.5cm;
+    }
+    .mainDetails {
+        padding: 0.7rem 0 0 1.4rem;
+        font-weight: normal;
+        font-size: 13.1px;
+    }
+
+    .countryName {
+        font-size: 19px;
+    }
+
+    #searchbtn {
+        height: 0.5cm;
+        width: 0.5cm;
+    }
+
+    #Section2 {
+        width: 79vw;
+    }
+}
